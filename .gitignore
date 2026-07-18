@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Env files (never commit real keys)
+backend/.env
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+frontend/.env.local
+
+# Agent/AI editor config files
+AGENTS.md
+CLAUDE.md
+
+# Misc
+.DS_Store
