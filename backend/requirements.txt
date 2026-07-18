@@ -6,3 +6,4 @@ mcpadapt==0.1.20
 python-dotenv==1.2.2
 sse-starlette==3.4.5
 pydantic==2.12.5
+crewai-tools==1.15.4
