@@ -51,6 +51,13 @@ def _patched_completion(*args, **kwargs):
                 _time.sleep(0.5)
                 if attempt == _MAX_RETRIES - 1:
                     raise
+                # Dynamically inject a self-correction message into the context for the next retry
+                if "messages" in kwargs and kwargs["messages"]:
+                    kwargs["messages"] = list(kwargs["messages"])
+                    kwargs["messages"].append({
+                        "role": "user", 
+                        "content": "CRITICAL: Your last response failed because you hallucinated XML tool tags like <function=web_search>. You MUST use the native JSON tool calling format provided in the API. Do NOT output raw XML."
+                    })
             else:
                 raise  # non-retryable bad request
 
