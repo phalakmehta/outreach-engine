@@ -57,6 +57,8 @@ def _patched_completion(*args, **kwargs):
     return _original_completion(*args, **kwargs)  # fallback, shouldn't reach here
 
 litellm.completion = _patched_completion
+litellm.success_callbacks = ["langsmith"]
+litellm.failure_callbacks = ["langsmith"]
 
 os.environ.setdefault("GROQ_API_KEY", os.environ.get("GROQ_API_KEY", ""))
 LLM = "groq/llama-3.3-70b-versatile"
