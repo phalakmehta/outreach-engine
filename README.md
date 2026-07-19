@@ -3,7 +3,10 @@
 An AI-powered B2B cold email generator that actually does its homework.
 
 Instead of relying on generic ChatGPT prompts, this engine deploys a **team of autonomous AI agents** (powered by CrewAI and Groq) to scour the live internet, research your target company, analyze their specific pain points, and write a highly personalized, hyper-targeted cold email pitching your offering.
-<img width="1548" height="755" alt="image" src="https://github.com/user-attachments/assets/cb06cb49-58b4-4cb0-bb74-d9b74deb7c99" />
+
+
+<img width="1897" height="907" alt="image" src="https://github.com/user-attachments/assets/f1edc9b3-c3cc-4e43-a00c-cdc03969d9de" />
+
 
 
 
